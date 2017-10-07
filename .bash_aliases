@@ -33,3 +33,10 @@ alias chown="chown --preserve-root"
 alias chmod="chmod --preserve-root"
 alias chgrp="chgrp --preserve-root"
 alias rm="rm -I --preserve-root"
+
+# git
+alias ga='git add'
+alias gc='git commit'
+alias gm='git commit -m'
+alias gp='git push'
+alias gs='git status -s'

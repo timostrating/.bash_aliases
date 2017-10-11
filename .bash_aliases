@@ -39,4 +39,4 @@ alias ga='git add'
 alias gc='git commit'
 alias gm='git commit -m'
 alias gp='git push'
-alias gs='git status -s'
+alias gs='git status -s'  # Ghostscript also uses gs so that may give an some problems

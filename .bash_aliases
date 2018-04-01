@@ -9,6 +9,7 @@ alias cd~="cd ~"
 
 # Just for fun
 alias please="sudo"
+alias sudo='sudo '
 
 # Shorter
 alias c="clear"

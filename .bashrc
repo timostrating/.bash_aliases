@@ -120,7 +120,7 @@ alias cd-="cd -"
 alias cd~="cd ~"
 
 # Just for fun
-alias please="sudo"
+alias fuck="sudo !!"
 alias sudo='sudo '
 
 # Shorter

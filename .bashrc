@@ -158,3 +158,7 @@ alias gs='git status -s'  # Ghostscript also uses gs so that may give some probl
 # Networking
 alias ports='netstat -tulanp'
 alias wget='wget -c'
+
+#######################################################################
+
+PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\] - [$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '

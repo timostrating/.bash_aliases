@@ -151,9 +151,8 @@ alias rm="rm -I --preserve-root"
 # Git
 alias ga='git add'
 alias gc='git commit'
-alias gm='git commit -m'
 alias gp='git push'
-alias gs='git status -s'  # Ghostscript also uses gs so that may give some problems
+alias gs='git status'  # Ghostscript also uses gs so that may give some problems
 
 # Networking
 alias ports='netstat -tulanp'

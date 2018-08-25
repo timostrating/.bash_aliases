@@ -138,6 +138,7 @@ alias mv="mv -iv"
 # Colors
 alias ls="ls -F --color=always"
 alias dir="dir -F --color=always"
+alias diff="diff --color=always"
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"

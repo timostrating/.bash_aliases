@@ -120,7 +120,7 @@ alias cd-="cd -"
 alias cd~="cd ~"
 
 # Just for fun
-alias fuck="sudo !!"
+alias fuck='sudo !!'
 alias sudo='sudo '
 
 # Shorter
@@ -153,16 +153,34 @@ alias rm="rm -I --preserve-root"
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
-alias gs='git status'  # Ghostscript also uses gs so that may give some problems
+alias gs='git status'  # Ghostscript also uses gs so that may give an some problems
 
 # Networking
 alias ports='netstat -tulanp'
 alias wget='wget -c'
 
+# make America great again
+alias make='make -j8'
+
+# vim
+alias v='code ./'
+alias vim='code ./'
+
 #######################################################################
 
 PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\] - [$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]]\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
 
-LC_COLLATE="C" # This is also not perfect but It is closer to the way that windows used to sort my files and directories.
+LC_COLLATE="C"
+# alias python=python3
+PATH=${PATH}:/usr/bin/mysql
 
-export GOPATH=$HOME/go
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
+# EMSCRIPTEN
+
+source ~/emsdk/emsdk_env.sh &>/dev/null # ignore echo output
